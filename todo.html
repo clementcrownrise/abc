@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/todo.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                //by default, disable the button
+                //document.querySelector('#submit').disabled = true;
+
+             
+                    //let answer = "Left ventricle"
+                document.querySelector('#submit').onclick = function () {
+                  const task =  document.querySelector('#task').value;
+              
+                    //document.querySelector('#tasks').innerHTML = task;
+               const li = document.createElement('li');
+               li.innerHTML = task;
+                    ///alert(task);
+               document.querySelector('#tasks').append(li);
+
+               document.querySelector('#task').value='';
+                  //stop form from submitting
+                  return false;
+                }
+            });
+
+        </script>
+    </head>
+    <body>
+    
+        <h1>Todo List</h1>
+
+        <ul id="tasks">
+
+        </ul>
+
+<form id="form" >
+        <input type="text"  id="task">
+        <input type="submit"  value="submit" id="submit">
+
+</form>
+
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+h1{
+     color:indigo; 
+     background-color: blue;
+     font-family: sans-serif;
+     
+}
+h2 {display: block; 
+    background-color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+text-decoration: underline; 
+text-transform: uppercase;
+
+}
+
+table{
+    width: 100%;
+    border: 1px solid black;
+    text-align: left;
+}
+
+table tr td{border:solid 1px black; padding: 5px;}
+
+table tr th{ background: yellow; padding: 5px; text-transform: uppercase;}
+
+#sss{ background-color: black; color: white; padding:20px}
+
+.myParagraph{
+
+    background-color: yellow;
+    padding: 5px;
+    text-align: justify;
+    font-size: 18px;
+}

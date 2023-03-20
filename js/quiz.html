@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script>
+        document.addEventListener('DOMContentloaded',function(){
+
+                document.querySelector('#submit').onclick = function(){
+                    //const answer = document.querySelector('#canswer').value ;
+                    alert('I am here');
+ //let str =""Your name asdfadsasdfds" 
+                    //return false;
+                }//stop
+
+             
+
+        });
+   function getResult(){
+                    const res = document.querySelector('input').value;
+                     //alert(res);
+                     if(res === 'Ikeja'  || res === 'IKEJA' || res === 'ikeja'){
+                        alert('Wow, You got it right');
+                     }else{
+                        alert ('You missed it');
+                     }
+                     
+                     //switch Casees
+
+ 
+
+                }
+    </script>
+</head>
+<body>
+
+  <!--<input type="text" onblur="getResult()">-->  
+   <form>
+    <h2>What is the capital of Lagos? </h2>
+
+        <input type="text"  id="canswer">
+        <button onclick="getResult()">Send</button>
+
+</form>
+
+
+<script>
+                        for (let i = 1; i < 12; i++) {
+                     text += "The number is " + i + "<br>";
+                     document.write(text);
+}
+</script>
+</body>
+</html>
